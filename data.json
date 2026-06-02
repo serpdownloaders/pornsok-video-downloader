@@ -1,0 +1,213 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/pornsok-downloader",
+  "serply_link": "https://serp.ly/pornsok-downloader",
+  "app_name": "Pornsok Video Downloader",
+  "short_description": "Download & Save Pornsok Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Downloader for PornsOK adds a browser-based download workflow for supported PornsOK video pages. Open a PornsOK page, let the player load the stream, then use the player button, popup, or right-click menu to save an available MP4 or HLS candidate. The extension scans the active page for playable media signals such as video tags, metadata streams, and recognized direct-video patterns.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/pornsok-downloader-fullscreen-01-c1668a0b1f.webp",
+    "https://apps.serp.co/media/optimized-products/pornsok-downloader-fullscreen-02-18afb59251.webp",
+    "https://apps.serp.co/media/optimized-products/pornsok-downloader-fullscreen-03-9026f413a4.webp",
+    "https://apps.serp.co/media/optimized-products/pornsok-downloader-fullscreen-04-418469edfc.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "How do I download a PornsOK video?",
+      "answer": "Open a PornsOK video page, press play if needed, then use the player download button, extension popup, or right-click menu to detect available media options."
+    },
+    {
+      "question": "Does this work on every PornsOK page?",
+      "answer": "Not guaranteed. The current build is a generated candidate with generic static-media extraction, so important PornsOK page types need hands-on QA before release."
+    },
+    {
+      "question": "What file types can it detect?",
+      "answer": "The extension normalizes direct MP4 URLs and HLS/M3U8-style media candidates when those URLs are exposed by the page or player flow."
+    },
+    {
+      "question": "Why might no video appear?",
+      "answer": "The player may not have initialized, playback may not have started, the page may use an unsupported pattern, or the adapter may filter the detected URL as noise."
+    },
+    {
+      "question": "Where do downloads go?",
+      "answer": "The offscreen configuration organizes saved files under a PornsOK download folder."
+    },
+    {
+      "question": "Does it send videos to a remote downloader server?",
+      "answer": "No remote media downloader is used. Auth and update checks use SERP and GitHub services, while media handling is designed around browser and offscreen processing."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Purpose-built URL matching for pornsok.com, www.pornsok.com, and PornsOK subdomains",
+    "In-player download button configured for the shared BravoPlayer-style wrapper",
+    "Detects video tags, metadata streams, performance resources, script URLs, and encoded media strings",
+    "Handles direct MP4 and HLS candidates through the shared offscreen pipeline",
+    "Right-click menu labeled \"Download PornsOK Video\"",
+    "Download manager with visible in-page progress",
+    "Saves files under a PornsOK download folder",
+    "GitHub release update checks for serpapps/pornsok-downloader",
+    "OTP activation through auth.serp.co with 3 free trial downloads",
+    "Right-click menu labeled \"Download PornsOK Video\" on page and video contexts",
+    "Popup and context-menu download entry points",
+    "Quality labels from detected metadata or URL hints where available"
+  ],
+  "content": {
+    "why": [
+      "PornsOK video pages often hide the actual media URL behind the player flow. The browser's native save options rarely reveal the final stream, and generic download sites can confuse ads, previews, thumbnails, or embeds with the main video. Copy-paste downloader workflows add unnecessary handoffs and often fail to capture the right stream.",
+      "This extension brings the SERP downloader workflow directly onto pornsok.com with PornsOK-specific URL matching, player-level controls, static media detection, an organized PornsOK download folder, and shared offscreen stream handling. Instead of digging through page source or network logs, you use familiar browser extension controls to detect and save available video candidates."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open PornsOK and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Install the Pornsok Downloader extension from the latest GitHub release.",
+      "Open your browser and navigate to a PornsOK video page.",
+      "Wait for the page to fully load and the player to render.",
+      "Press play on the video if the page waits for interaction before exposing stream URLs.",
+      "Look for the download button near the player surface or open the extension popup.",
+      "Right-click anywhere on the page or on the video element and select \"Download PornsOK Video\" from the context menu.",
+      "Review the detected media candidates and choose the quality option you prefer.",
+      "Click download and wait for the offscreen processing to complete, then save the file to your PornsOK folder."
+    ],
+    "supported_formats": [
+      "Input: Direct MP4 URLs and HLS/M3U8-style media candidates when those URLs are exposed by the page or player flow",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "PornsOK viewers who want a simple private browser workflow for personal offline viewing",
+      "Users who prefer browser extension controls over copy-paste downloader websites",
+      "Anyone who needs to check whether a PornsOK player page exposes MP4 or HLS media",
+      "Users who want an in-player control instead of digging through page source or network logs",
+      "SERP QA and support teams documenting what the generated PornsOK candidate can and cannot claim before release"
+    ],
+    "use_cases": [
+      "Save a PornsOK video for offline personal viewing",
+      "Check whether a PornsOK player page exposes MP4 or HLS media",
+      "Use an in-player control instead of digging through page source or network logs",
+      "Start detection from the extension popup or page and video context menu",
+      "Capture release-readiness notes for the generated PornsOK build"
+    ],
+    "troubleshooting": [
+      "No download button appears on the page Refresh the page and make sure the video player has fully loaded. Start playback if the page hides media URLs until the stream begins.",
+      "The extension detects no media candidates The player may not have initialized, playback may not have started, or the page may use an unsupported pattern. Try pressing play first, then reopen the popup or right-click menu.",
+      "The download fails or produces a broken file Check your internet connection and ensure the stream URL is still valid. Some HLS streams may require retrying the download if segments time out.",
+      "The extension says I have used my trial downloads The trial allows 3 free downloads per device. After that, you will need a paid license to continue downloading.",
+      "The extension does not work on a specific PornsOK page Some PornsOK pages may use different player configurations or obfuscated media URLs that the current adapter cannot parse. Report the page URL to the development team for review."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported PornsOK page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "Press play first if detection is empty, as some PornsOK pages only expose media URLs after playback begins",
+      "The current PornsOK adapter is generated and should be tested against real playback before release"
+    ],
+    "about": [
+      "PornsOK is a video hosting platform that streams adult content through a browser-based player. The Pornsok Downloader extension helps users detect and save available media from PornsOK video pages using a dedicated browser extension workflow instead of generic downloader websites."
+    ]
+  },
+  "serpx_link": "https://serpx.link/pornsok-downloader",
+  "github_topics": [
+    "pornsok-download",
+    "pornsok-downloader",
+    "pornsok-video-downloader",
+    "pornsok-video-downloader-online",
+    "pornsok-video-downloader-mac",
+    "pornsok-video-downloader-window",
+    "pornsok-video-downloader-free",
+    "pornsok-video-downloader-extension",
+    "pornsok-video-downloader-app",
+    "pornsok-video-downloader-chrome",
+    "pornsok-video-downloader-from-url",
+    "how-to-download-pornsok-videos",
+    "how-to-download-pornsok-videos-mac",
+    "how-to-download-pornsok-videos-windows",
+    "how-to-download-pornsok-videos-online",
+    "how-to-download-pornsok-videos-free",
+    "how-to-download-from-pornsok",
+    "how-to-download-videos-from-pornsok",
+    "download-pornsok-videos",
+    "pornsok-video-tutorial",
+    "save-pornsok-videos",
+    "pornsok-video-content-saver",
+    "how-to-download-pornsok-videos-for-free"
+  ],
+  "hashtags": [
+    "#PornsokDownload",
+    "#PornsokDownloader",
+    "#PornsokVideoDownloader",
+    "#PornsokVideoDownloaderOnline",
+    "#PornsokVideoDownloaderMac",
+    "#PornsokVideoDownloaderWindow",
+    "#PornsokVideoDownloaderFree",
+    "#PornsokVideoDownloaderExtension",
+    "#PornsokVideoDownloaderApp",
+    "#PornsokVideoDownloaderChrome",
+    "#PornsokVideoDownloaderFromURL",
+    "#HowToDownloadPornsokVideos",
+    "#HowToDownloadPornsokVideosMac",
+    "#HowToDownloadPornsokVideosWindows",
+    "#HowToDownloadPornsokVideosOnline",
+    "#HowToDownloadPornsokVideosFree",
+    "#HowToDownloadFromPornsok",
+    "#HowToDownloadVideosFromPornsok",
+    "#DownloadPornsokVideos",
+    "#PornsokVideoTutorial",
+    "#SavePornsokVideos",
+    "#PornsokVideoContentSaver",
+    "#HowToDownloadPornsokVideosForFree"
+  ],
+  "youtube_tags": [
+    "Pornsok Download",
+    "Pornsok Downloader",
+    "Pornsok Video Downloader",
+    "Pornsok Video Downloader Online",
+    "Pornsok Video Downloader Mac",
+    "Pornsok Video Downloader Window",
+    "Pornsok Video Downloader Free",
+    "Pornsok Video Downloader Extension",
+    "Pornsok Video Downloader App",
+    "Pornsok Video Downloader Chrome",
+    "Pornsok Video Downloader From URL",
+    "How To Download Pornsok Videos",
+    "How To Download Pornsok Videos Mac",
+    "How To Download Pornsok Videos Windows",
+    "How To Download Pornsok Videos Online",
+    "How To Download Pornsok Videos Free",
+    "How To Download From Pornsok",
+    "How To Download Videos From Pornsok",
+    "Download Pornsok Videos",
+    "Pornsok Video Tutorial",
+    "Save Pornsok Videos",
+    "Pornsok Video Content Saver",
+    "How To Download Pornsok Videos For Free"
+  ]
+}
